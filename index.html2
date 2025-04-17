@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Funnel Template</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f9;
+      padding: 50px;
+    }
+    .funnel {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #ff6b6b;
+    }
+    button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="funnel">
+    <h1>🚀 Get My Free Funnel Blueprint</h1>
+    <p>Learn how to turn visitors into buyers (100% free)</p>
+    <button onclick="showForm()">Yes, Send It To Me!</button>
+    
+    <!-- Hidden Form (Will Appear After Click) -->
+    <div id="emailForm" style="display: none; margin-top: 20px;">
+      <input type="email" id="email" placeholder="Your best email..." style="padding: 10px; width: 60%;">
+      <button onclick="submitForm()">Download Now</button>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById("emailForm").style.display = "block";
+    }
+    function submitForm() {
+      const email = document.getElementById("email").value;
+      alert(`Thanks! Check your email (${email}) for the download.`);
+      // (We’ll add real email collection in STEP 3)
+    }
+  </script>
+</body>
+</html>
